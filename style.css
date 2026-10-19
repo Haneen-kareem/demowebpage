@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+}
+.nav{
+    background-color: rgb(28, 27, 27);
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.section{
+    background-color: black(102, 100, 98);
+    height: 425px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px rgb(47, 46, 46) solid;
+    
+}
+.review{
+    color: rgb(12, 12, 12);
+    width: 100%;
+    height: 130px;
+    background-color: black(22, 22, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-transform: uppercase;
+}
+.rvw{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(227, 188, 44);
+    font-size: 10px;
+
+}
+.line{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 20px;
+    align-items: center;
+    padding-top: 30px;
+}
+.menu{
+    background-color: rgb(8, 8, 8);
+    height: fit-content;
+    color: aliceblue;
+}
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 50px;
+} */
+.items{
+    background-color: rgb(36, 36, 36);
+    border:1px rgb(104, 104, 103) solid ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    transition: border-color .2s, transform .2s;
+}
+.items:hover{
+    border-color: yellow;
+    transform: translatey(-10px);
+}
+.usrrvw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.revw2{
+    background-color: rgb(30, 30, 30);
+    border: 1px silver solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: aliceblue;
+    transition: transform .2s;
+}
+.revw2:hover{
+    transform: scale(1.05);
+}
+.get{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+    background-color: rgb(24, 23, 23);
+}
+.form{
+    background-color: rgb(201, 156, 60);
+    padding: 10px;
+    height: fit-content;
+    border: 1px rgb(143, 116, 10) solid;
+    border-radius: 10px;
+    color: black;
+    
+
+}
+.label{
+    font-size: small;
+}
+.input{
+    border-radius: 3px;
+    border-style: none;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+}

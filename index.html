@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>savoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        *{
+            /* outline: 1px solid rgb(51, 0, 255) !important; */
+        }
+        .button {
+            background-color: yellow;
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: medium;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: yellow;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .lists {
+            list-style: none;
+            padding: 0;
+            color: aliceblue;
+            padding-top: 20px;
+        }
+
+        .lists li {
+            position: relative;
+            padding-left: 40px;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+
+        .lists li::before {
+            content: "📍";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 30px;
+            background: transparent(255, 255, 255, 0.1);
+        }
+        @media(max-width: 441px){
+            .nav{
+                display: flex; 
+                justify-content: space-between; 
+              }  
+            .nav .button{
+                /* margin-left: 80px; */
+                width: 80px;
+                height: fit-content;
+            }
+            .d{
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+
+            }
+        }
+    </style>
+    <nav class="nav">
+        <div class="c" style="margin-left: 30px;display: flex;">
+            <h3 style="color: yellow;"><span style="color: antiquewhite; font-size: xx-large;">s</span>avoria</h2>
+        </div>
+        <div class="a" style=" display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        color: rgb(126, 125, 123);">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>About</p>
+        </div>
+        <div class="b" style="display: flex;justify-content: end;margin-right: 30px;">
+            <button class="button"><a href="" style="text-decoration: none; color: black;">Contact us</a></button>
+        </div>
+    </nav>
+    <section class="section">
+        <p style="margin-top: 50px;
+        text-transform: uppercase;
+        color: yellow;">
+            Fine Dining · Kozhikode · Est. 2015
+        </p><br>
+        <p style="font-size: 50px; color: bisque;">
+            Where every dish
+        </p>
+        <p style="font-size: 50px; color: bisque;">tells
+            <span style="color: yellow;
+            ;"><i>a story</i></span>
+        </p><br>
+        <div class="d">
+        <p 
+            style="color: rgb(134, 135, 135);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Authentic cuisine crafted from the freshest local ingredients, slow-
+         cooked with decades of tradition and a touch of modern refinement.
+        </p>
+        </div>
+        <div style="display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;">
+            <button style="width: 150px;
+                        height: 45px;
+                        border-radius: 10px;
+                        font-size:medium;
+                        background-color: yellow;"><a href="" style="text-decoration: none;
+            color: rgb(16, 15, 15);">Reserve a Table</a></button>
+            <button style="width: 150px;
+                        height: 45px;
+                        border-radius: 10px;
+                        font-size:medium;
+                        background-color: transparent;">
+                <a href="" style="text-decoration: none;
+                        color: antiquewhite;">Explore Menu</menu></a>
+            </button>
+        </div>
+    </section>
+    <hr style="width: 95%; 
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border-color:rgb(47, 46, 46);
+        opacity: 30%;">
+    <div class="review">
+        <div class="rvw">
+            <p style="font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif;">10+</p>
+            <p>years</p>
+        </div>
+        <div class="rvw">
+            <p style="font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif;">45k+</p>
+            <p>happy diners</p>
+        </div>
+        <div class="rvw">
+            <p style="font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif;">4.8</p>
+            <p>rating</p>
+        </div>
+        <div class="rvw">
+            <p style="font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif;">8</p>
+            <p>awards</p>
+        </div>
+    </div>
+    <div class="line">
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+        <div style="height: 7px;width: 7px; background-color: rgb(233, 185, 13); border-radius: 100% 100% 100% 100%;
+        margin-left: 10px;margin-right: 10px;opacity: 30%;"></div>
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+    </div>
+    <div class="menu">
+        <div style="display: flex;
+        flex-direction: column;
+        align-items: center;">
+            <p style="margin-top:60px ;color: yellow;">OUR MENU</p>
+            <P style="font-size: 40px;">Crafted with passion</P>
+            <p style="color: rgb(128, 127, 125);">Farm-to-table freshness, bold spices, unforgettable plates</p>
+            <div style="padding-top: 50px;gap: 10px;display: flex;">
+                <button>All</button>
+                <button>Starters</button>
+                <button>Mains</button>
+                <button>Deserts</button>
+                <button>Drinks</button>
+            </div>
+        </div>
+        <div style="display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+        gap: 14px;
+        padding: 30px 20px;">
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+
+            </div>
+            <div class="items">
+                <p style="font-size: xx-large;">🥗</p>
+                <p style="font-size: x-small;">STARTERS</p>
+                <p>Mezze Platter</p>
+                <p style="font-family: monospace;">Hummus, baba ganoush, warm pita & pickled veg</p>
+                <div style="display: flex;
+                     justify-content: space-between;">
+                    <p>₹ 320</p>
+                    <p style="border: 1px  gray solid;
+                       border-radius: 10px;
+                       padding-right: 5px;
+                       padding-left: 5px;"> Vegetarian</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line" style="padding-top: 20px;">
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+        <div style="height: 7px;width: 7px; background-color: rgb(233, 185, 13); border-radius: 100% 100% 100% 100%;
+        margin-left: 10px;margin-right: 10px;opacity: 30%;"></div>
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+    </div>
+    <div >
+        <div class="usrrvw">
+        <p style="margin-top:50px ;color: rgb(233, 233, 13); font-size: 15px;">TESTIMONIALS </p>
+        <P style="font-size: 40px; color: aliceblue;">What our guests say</P>
+        <p style="color: rgb(128, 127, 125);font-size: 17px;">Stories from those who sat at our table</p>
+        </div>
+        <div style="display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+                gap: 14px;
+                padding: 30px 20px;">
+            <div class="revw2">
+                <div style="color: aliceblue;">
+                    <i style="font-size: 15px;line-height: 30px;">"The lamb tagine was unlike anything I have ever
+                        tasted. Perfectly slow-cooked, warm, deeply spiced. A dish I will dream about."</i>
+                </div>
+                <div style="display: flex;
+                        align-items: center;">
+                    <div style="background-color: yellow;
+                     width: fit-content;
+                     height: 50px;
+                     padding: 10PX;
+                     border: 1PX yellow solid;
+                     border-radius: 100px 100px 100px 100px;
+                     display: flex;
+                     align-items: center;">
+                        <b style="font-size: large;
+                            color: black;">HK</b>
+                    </div>
+                    <div style="display: flex;
+                            flex-direction: column;
+                            padding-left: 10px">
+                        <b>HANEEN KAREEM</b>
+                        <p>calicut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="revw2">
+                <i style="font-size: 15px;line-height: 30px;">"The lamb tagine was unlike anything I have ever tasted.
+                    Perfectly slow-cooked, warm, deeply spiced. A dish I will dream about."</i>
+                <div style="display: flex;
+                        align-items: center;">
+                    <div style="background-color: yellow;
+                     width: fit-content;
+                     height: 50px;
+                     padding: 10PX;
+                     border: 1PX yellow solid;
+                     border-radius: 100px 100px 100px 100px;
+                     display: flex;
+                     align-items: center;">
+                        <b style="font-size: large;
+                            color: black;">HK</b>
+                        <b></b>
+                    </div>
+                    <div style="display: flex;
+                            flex-direction: column;
+                            padding-left: 10px;">
+                        <b>HANEEN KAREEM
+                        </b>
+                        <p>calicut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="revw2">
+                <i style="font-size: 15px;line-height: 30px;">"The lamb tagine was unlike anything I have ever tasted.
+                    Perfectly slow-cooked, warm, deeply spiced. A dish I will dream about."</i>
+                <div style="display: flex;
+                        align-items: center;">
+                    <div style="background-color: yellow;
+                     width: fit-content;
+                     height: 50px;
+                     padding: 10PX;
+                     border: 1PX yellow solid;
+                     border-radius: 100px 100px 100px 100px;
+                     display: flex;
+                     align-items: center;">
+                        <<b style="font-size: large;
+                            color: black;">HK</b>
+                        <b></b>
+                    </div>
+                    <div style="display: flex;
+                            flex-direction: column;
+                            padding-left: 10px;">
+                        <b>HANEEN KAREEM
+                        </b>
+                        <p>calicut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="revw2">
+                <p style="color: yellow;">★ ★ ★ ★ ★</p>
+                <i style="font-size: 15px;line-height: 30px;">"The lamb tagine was unlike anything I have ever tasted.
+                    Perfectly slow-cooked, warm, deeply spiced. A dish I will dream about."</i>
+                <div style="display: flex;
+                        align-items: center;
+                        ">
+                    <div style="background-color: yellow;
+                     width: fit-content;
+                     height: 50px;
+                     padding: 10PX;
+                     border: 1PX yellow solid;
+                     border-radius: 100px 100px 100px 100px;
+                     display: flex;
+                     align-items: center;">
+                        <b style="font-size: large;
+                            color: black;">HK</b>
+                        <b></b>
+                    </div>
+                    <div style="display: flex;
+                            flex-direction: column;
+                            padding-left: 10px;">
+                        <b>HANEEN KAREEM
+                        </b>
+                        <p>calicut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line" style="padding-top: 20px;">
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+        <div style="height: 7px;width: 7px; background-color: rgb(233, 185, 13); border-radius: 100% 100% 100% 100%;
+        margin-left: 10px;margin-right: 10px;opacity: 30%;"></div>
+        <div style="height: 1px;width: 48%; background-color: rgb(233, 185, 13);opacity: 30%;"></div>
+    </div>
+    <div class="get">
+        <div style="padding: 30px;">
+            <p style="color: yellow;">GET IN TOUCH</p>
+            <Pre style="color: aliceblue;
+                 font-size: 30px;
+                 padding-top: 20px;">Reserve your 
+evening with us</Pre>
+            <p style="color: aliceblue;
+                 padding-top: 20px;">We would love to host you. Fill out the form and our team will confirm your
+                reservation within the hour.</p>
+            <ul class="lists">
+                <li>Beach Road, Kozhikode, Kerala 673001</li>
+                <li>+91 495 000 1234</li>
+                <li>hello@savoria.in</li>
+                <li>Open daily · 12 PM – 11 PM</li>
+            </ul>
+        </div>
+        <div style="padding: 20px;">
+            <form action="" class="form">
+                <!-- <div style="display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        gap: 5px;">
+                    <div>
+                        <label for="name" class="label">FIRST NAME</label><br>
+                        <input type="text" class="input">
+                    </div>
+                    <div>
+                        <label for="name" class="label">LAST NAME</label><br>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div  style="font-size: small;
+                        padding: 10px;">
+                    <label for="email" class="label">EMAIL</label><br>
+                    <input type="email" class="input" style="width: 100%;"></input>
+                </div>
+                <div style="display: flex;
+                        justify-content:space-around;">
+                    <div>
+                        <label for="date" class="label">DATE</label><br>
+                        <input type="date" class="input">
+                    </div>
+                    <div>
+                        <label for="name" class="label">GUESTS</label><br>
+                        <input type="number" class="input">
+                    </div>
+                </div>
+                <div  style="font-size: small;
+                        padding: 10px;">
+                    <label for="email" class="label">SPECIAL REQUEST</label><br>
+                    <textarea type="email" class="input" style="width: 100%;" placeholder="Allergies,preferences,etc"></textarea>
+                </div>
+                <button style="width: 100%;">SUBMIT</button> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
